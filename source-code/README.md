@@ -6,6 +6,7 @@ was used to develop it.
 
 ## What is it?
 
+1. `code-testing`: illustrations of using assertions and unit tests.
 1. `context-manager`: illustrates how to write your own context managers.
 1. `coroutines`: illustrates how to write coroutines in Python.
 1. `decorators`: illustrates how to write decorators in Python.
@@ -15,10 +16,12 @@ was used to develop it.
    programming in Python.
 1. `introspection`: illustration of how to implement introspection in
    Python.
+1. `iterators`: illustrates iterators and functional programming concepts.
 1. `object-orientation`: illustrates some concepts of object-oriented
    programming in Python.
 1. `operators-functools`: illustrates some applications of the `operator`
    and `functools` modules in Python's standard library.
+1. `pyparsing`: illustration of unit testing on real world code.
 1. `typing`: illustrates how to use type annotation in Python, and
    demonstrates `mypy`.
 1. `unit-testing`: illustrates writing unit tests with `unittest` and

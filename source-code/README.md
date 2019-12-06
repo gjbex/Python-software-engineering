@@ -16,6 +16,7 @@ was used to develop it.
    programming in Python.
 1. `introspection`: illustration of how to implement introspection in
    Python.
+1. `iterators`: illustrates iterators and functional programming concepts.
 1. `object-orientation`: illustrates some concepts of object-oriented
    programming in Python.
 1. `operators-functools`: illustrates some applications of the `operator`

@@ -21,6 +21,7 @@ was used to develop it.
    programming in Python.
 1. `operators-functools`: illustrates some applications of the `operator`
    and `functools` modules in Python's standard library.
+1. `pyparsing`: illustration of unit testing on real world code.
 1. `typing`: illustrates how to use type annotation in Python, and
    demonstrates `mypy`.
 1. `unit-testing`: illustrates writing unit tests with `unittest` and

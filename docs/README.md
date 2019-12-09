@@ -47,7 +47,7 @@ Total duration: 4 hours.
 ## Training materials
 
 Slides are available in the
- [GitHub repository](https://github.com/gjbex/Scientific-Python),
+ [GitHub repository](https://github.com/gjbex/Python-software-engineering),
 as well as example code and hands-on material.
 
 

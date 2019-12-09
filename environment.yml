@@ -1,0 +1,12 @@
+name: python_software_engineering
+channels:
+  - defaults
+dependencies:
+  - flake8
+  - jupyterlab
+  - matplotlib
+  - mypy
+  - pylint
+  - pyparsing
+  - pytest
+  - python=3.7.5

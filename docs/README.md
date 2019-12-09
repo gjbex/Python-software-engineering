@@ -1,9 +1,10 @@
-The Python programming language is increasingly popular.  It is a
-versatile language for general purpose programming and accessible
-for novice programmers.  Although Python is easy to use, writing
-quality applications requires some effort and experience.
-This training introduces concepts and modules that will help you
-write better software.
+Quality of software matters, whether you share it with others or not.
+Software should be easy to install, easy to use, and well documented.
+This training will cover those aspects from the perspective of the
+Python ecosystem.  However, it is also important that software is easy
+to maintain, so coding style matters, API-level documentation should be
+available, as well as a battery of tests to ensure the software's
+integrity.  Of course, good design is at least as important.
 
 
 ## Learning outcomes

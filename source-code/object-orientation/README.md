@@ -16,6 +16,8 @@ Some examples of object-oriented programming in Python.
   * `overloading.ipynb`: illustration of function overloading using
     single dispatch.
   * `inheritance.py`: illustration of inheritance of class attributes.
+  * `multiple_inheritance.ipynb`: notebook illustrating some aspects
+    of multiple inheritance in Python.
   * `mix-ins`: illustration of mix-ins.
   * `finite-state-parser`: illustration of object-oriented data
     representation.

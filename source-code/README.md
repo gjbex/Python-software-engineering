@@ -26,3 +26,5 @@ was used to develop it.
    demonstrates `mypy`.
 1. `unit-testing`: illustrates writing unit tests with `unittest` and
    `pytest`.
+1. `oo_vs_functional.ipynb`: comparing object-oriented approach to
+  functional approach, including coroutines.

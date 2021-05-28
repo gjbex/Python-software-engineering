@@ -1,4 +1,4 @@
-# Unittest
+# Testing
 
 Testing is an integral part of the software development process.  Unit
 testing is a popular technique, and is used in test-driven development

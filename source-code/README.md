@@ -23,7 +23,7 @@ was used to develop it.
 1. `pyparsing`: illustration of unit testing on real world code.
 1. `typing`: illustrates how to use type annotation in Python, and
    demonstrates `mypy`.
-1. `unit-testing`: illustrates writing unit tests with `unittest` and
+1. `testing`: illustrates writing unit tests with `unittest` and
    `pytest`.
 1. `oo_vs_functional.ipynb`: comparing object-oriented approach to
   functional approach, including coroutines.

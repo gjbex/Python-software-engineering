@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
+import sys
 
-class TypedProperty(object):
+
+class TypedProperty():
 
     def __init__(self, name, type, default=None):
         self._name = '-' + name
@@ -13,8 +15,7 @@ class TypedProperty(object):
 
     def __set__(self, instance, value):
         if not isinstance(value, self._type):
-            raise TypeError('value {0} is not of {1}'.format(value,
-                                                             self._type))
+            raise TypeError(f'value {value} is not of type {self._type}')
         setattr(instance, self._name, value)
 
     def __delete__(self, instance, cls):
@@ -36,12 +37,10 @@ class Book(object):
             self.year = year
 
     def __str__(self):
-        return '{0}\n  {1}, {2}'.format(self.title, self.author, self.year)
+        return f'{self.title}\n  {self.author}, {self.year}'
 
 
 if __name__ == '__main__':
-    import sys
-
     book1 = Book()
     print('showing defaults:')
     print(str(book1) + '\n')
@@ -54,6 +53,6 @@ if __name__ == '__main__':
     try:
         book3 = Book(1984, 'George Orwell', 1948)
     except TypeError as error:
-        sys.stderr.write('### error: {0}\n'.format(error))
+        print(f'### error: {error}', file=sys.stderr)
         sys.exit(1)
     sys.exit(0)

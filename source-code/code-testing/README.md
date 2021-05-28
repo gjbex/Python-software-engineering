@@ -9,7 +9,7 @@ a code base.
 What is it?
 -----------
 1. `constant_db.py`: implements a class that creates a database containing
-    constants (mathematical or fysical), and defines a number of methods
+    constants (mathematical or physical), and defines a number of methods
     to query it.
 1. `constant_db_test.py`: `unittest.TestCase` extension that implements a
     number of tests for the database.  The database is set up in the

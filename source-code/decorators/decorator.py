@@ -5,13 +5,13 @@ from functools import wraps
 
 class NegArgError(Exception):
     def __init__(self, name, n):
-        super(NegArgError, self).__init__()
+        super().__init__()
         self.message = 'argument {0} for {1} negative'.format(n, name)
 
 
 class TooLargeArgError(Exception):
     def __init__(self, name, n):
-        super(TooLargeArgError, self).__init__()
+        super().__init__()
         self.message = 'argument {0} for {1} too large'.format(n, name)
 
 
@@ -46,8 +46,8 @@ if __name__ == '__main__':
     import sys
     for n in [3, 7, 22, -1]:
         try:
-            print('{0}! = {1}'.format(n, fact(n)))
+            print(f'{n}! = {fact(n)}')
         except Exception as error:
-            sys.stderr.write('### error: {0}\n'.format(error))
-    print('function name: {0}'.format(fact.__name__))
-    print('function docs: {0}'.format(fact.__doc__))
+            print(f'### error: {error.message}', file=sys.stderr)
+    print(f'function name: {fact.__name__}')
+    print(f'function docs: {fact.__doc__}')

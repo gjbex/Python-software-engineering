@@ -1,5 +1,4 @@
-CodeTesting
-===========
+# Simple fixtures
 
 Python's standard library contains the `unittest` module, which allows
 to easily implement unit testing, i.e., it is a framework for setting

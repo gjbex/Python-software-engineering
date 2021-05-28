@@ -6,7 +6,6 @@ was used to develop it.
 
 ## What is it?
 
-1. `code-testing`: illustrations of using assertions and unit tests.
 1. `context-manager`: illustrates how to write your own context managers.
 1. `coroutines`: illustrates how to write coroutines in Python.
 1. `decorators`: illustrates how to write decorators in Python.

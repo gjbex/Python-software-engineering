@@ -18,10 +18,6 @@ What is it?
     defined by `unittest.TestCase`.
 1. `run_test.sh`: shell script that actually runs the test code, and that
     uses discovery to minimize maintenance of test code.
-1. `Asserts`: `assert` is a Python statement, so it not part of unit
-    testing per se.  It is mainly intended for contract-based programming
-    and one can prevent code to be emitted for asserts by using the
-    `-O` optimizatino flag when running the code.
 
 Note
 ----

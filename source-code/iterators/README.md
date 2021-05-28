@@ -42,3 +42,4 @@ often they can be constructed by using the Python standard library's
 1. `generating_data.py`: a retake of the data geenration script in
     Fundamentals, now using `itertools` and built-in Python functional
     features.
+1. `iterators_vs_generators.ipynb`: comparing iterators to generators.

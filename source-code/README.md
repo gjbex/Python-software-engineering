@@ -6,7 +6,6 @@ was used to develop it.
 
 ## What is it?
 
-1. `code-testing`: illustrations of using assertions and unit tests.
 1. `context-manager`: illustrates how to write your own context managers.
 1. `coroutines`: illustrates how to write coroutines in Python.
 1. `decorators`: illustrates how to write decorators in Python.
@@ -24,5 +23,7 @@ was used to develop it.
 1. `pyparsing`: illustration of unit testing on real world code.
 1. `typing`: illustrates how to use type annotation in Python, and
    demonstrates `mypy`.
-1. `unit-testing`: illustrates writing unit tests with `unittest` and
+1. `testing`: illustrates writing unit tests with `unittest` and
    `pytest`.
+1. `oo_vs_functional.ipynb`: comparing object-oriented approach to
+  functional approach, including coroutines.

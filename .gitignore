@@ -108,3 +108,6 @@ venv.bak/
 *.swp
 *.bak
 ~$python_software_engineering.pptx
+
+# direnv configuration file
+.envrc

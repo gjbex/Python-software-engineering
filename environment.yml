@@ -2,11 +2,12 @@ name: python_software_engineering
 channels:
   - defaults
 dependencies:
-  - flake8
+  - pyparsing
   - jupyterlab
-  - matplotlib
+  - flake8
+  - pytest
+  - python=3.9
   - mypy
   - pylint
-  - pyparsing
-  - pytest
-  - python=3.7.10
+  - matplotlib
+prefix: /home/gjb/miniconda3/envs/python_software_engineering

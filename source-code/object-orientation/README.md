@@ -19,6 +19,4 @@ Some examples of object-oriented programming in Python.
   * `multiple_inheritance.ipynb`: notebook illustrating some aspects
     of multiple inheritance in Python.
   * `mix-ins`: illustration of mix-ins.
-  * `finite-state-parser`: illustration of object-oriented data
-    representation.
   * `attr_intro.ipynb`: illustration of how to use the `attrs` package.

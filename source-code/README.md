@@ -26,3 +26,4 @@ was used to develop it.
    `pytest`.
 1. `oo_vs_functional.ipynb`: comparing object-oriented approach to
   functional approach, including coroutines.
+1. `metaclasses`: illustration of the use of metaclasses in Python.

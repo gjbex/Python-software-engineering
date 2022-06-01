@@ -10,5 +10,5 @@ def fib(n: int) -> int:
         return fib(n - 1) + fib(n - 2)
 
 if __name__ == '__main__':
-    n = int(sys.argv[1]) # type: str
+    n: str = int(sys.argv[1])
     print(fib(n))

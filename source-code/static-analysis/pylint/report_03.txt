@@ -1,0 +1,18 @@
+************* Module context_03
+context_03.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+context_03.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+context_03.py:12:4: C0116: Missing function or method docstring (missing-function-docstring)
+context_03.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
+context_03.py:43:0: C0116: Missing function or method docstring (missing-function-docstring)
+context_03.py:44:27: C0103: Variable name "c1" doesn't conform to snake_case naming style (invalid-name)
+context_03.py:44:49: C0103: Variable name "c2" doesn't conform to snake_case naming style (invalid-name)
+context_03.py:47:25: C0104: Disallowed name "foo" (disallowed-name)
+context_03.py:47:46: C0104: Disallowed name "bar" (disallowed-name)
+context_03.py:49:27: C0103: Variable name "c1" doesn't conform to snake_case naming style (invalid-name)
+context_03.py:49:49: C0103: Variable name "c2" doesn't conform to snake_case naming style (invalid-name)
+context_03.py:52:8: W0101: Unreachable code (unreachable)
+context_03.py:56:4: C0103: Constant name "status" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 6.67/10
+

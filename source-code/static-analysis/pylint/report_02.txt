@@ -1,0 +1,21 @@
+************* Module context_02
+context_02.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+context_02.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+context_02.py:27:0: C0116: Missing function or method docstring (missing-function-docstring)
+context_02.py:33:0: C0116: Missing function or method docstring (missing-function-docstring)
+context_02.py:34:27: C0103: Variable name "c1" doesn't conform to snake_case naming style (invalid-name)
+context_02.py:34:49: C0103: Variable name "c2" doesn't conform to snake_case naming style (invalid-name)
+context_02.py:35:28: W0212: Access to a protected member _context_nr of a client class (protected-access)
+context_02.py:36:28: W0212: Access to a protected member _context_nr of a client class (protected-access)
+context_02.py:37:25: C0104: Disallowed name "foo" (disallowed-name)
+context_02.py:37:46: C0104: Disallowed name "bar" (disallowed-name)
+context_02.py:39:27: C0103: Variable name "c1" doesn't conform to snake_case naming style (invalid-name)
+context_02.py:39:49: C0103: Variable name "c2" doesn't conform to snake_case naming style (invalid-name)
+context_02.py:40:28: W0212: Access to a protected member _context_nr of a client class (protected-access)
+context_02.py:42:8: W0101: Unreachable code (unreachable)
+context_02.py:42:28: W0212: Access to a protected member _context_nr of a client class (protected-access)
+context_02.py:46:4: C0103: Constant name "status" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 5.29/10
+

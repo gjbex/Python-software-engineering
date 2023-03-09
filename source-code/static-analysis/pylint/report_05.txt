@@ -1,0 +1,10 @@
+************* Module context_05
+context_05.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+context_05.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+context_05.py:12:4: C0116: Missing function or method docstring (missing-function-docstring)
+context_05.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
+context_05.py:43:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+-----------------------------------
+Your code has been rated at 8.68/10
+

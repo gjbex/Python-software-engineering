@@ -1,0 +1,11 @@
+************* Module context_04
+context_04.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+context_04.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+context_04.py:12:4: C0116: Missing function or method docstring (missing-function-docstring)
+context_04.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
+context_04.py:43:0: C0116: Missing function or method docstring (missing-function-docstring)
+context_04.py:52:8: W0101: Unreachable code (unreachable)
+
+------------------------------------------------------------------
+Your code has been rated at 8.46/10
+

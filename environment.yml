@@ -6,7 +6,7 @@ dependencies:
   - jupyterlab
   - flake8
   - pytest
-  - python=3.10
+  - python
   - mypy
   - pylint
   - matplotlib

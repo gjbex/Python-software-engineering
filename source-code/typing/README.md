@@ -36,3 +36,7 @@ Type checking can be done using [mypy](http://mypy-lang.org/index.html).
    false positive.
 1. `numpy_typing.py`: illustration of a script using both numpy and
    matplotlib with type hints.
+1. `classes.py`: illustration of using type hints with a user-defined
+   class.
+1. `classes_incorrect.py`: illustration of using type hints with a
+   user-defined class with errors.

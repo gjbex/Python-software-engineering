@@ -31,3 +31,4 @@ was used to develop it.
    structures.
 1. `code-organization`: illustration of how to organize code in packages
    and modules.
+1. `error-handling`: simple illustration of error handling.

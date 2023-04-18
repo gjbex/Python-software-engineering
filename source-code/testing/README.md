@@ -15,3 +15,5 @@ versatile, but more modern packages are available.
     testing per se.  It is mainly intended for contract-based programming
     and one can prevent code to be emitted for asserts by using the
     `-O` optimizatino flag when running the code.
+1. `DocTest`: illustration of using doctest (part of the Python standard
+   library.

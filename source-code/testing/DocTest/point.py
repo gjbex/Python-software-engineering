@@ -22,6 +22,9 @@ class Point:
         --------
         >>> Point(3.1, 5.6)
         (3.1, 5.6)
+        >>> Point('a', 'b') # doctest: +IGNORE_EXCEPTION_DETAIL
+        Traceback (most recent call last):
+        ValueError: could not convert string to float: 'a'
         '''
         self._x = float(x_value)
         self._y = float(y_value)
@@ -166,7 +169,7 @@ class Point:
         --------
         >>> p = Point(3.1, 5.6)
         >>> repr(p)
-        (3.1, 5.6)
+        '(3.1, 5.6)'
         '''
         return f'({self.x}, {self.y})'
 

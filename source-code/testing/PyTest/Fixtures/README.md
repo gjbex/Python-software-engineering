@@ -4,6 +4,8 @@ A simple illustration of using fixtures in pytest.
 ## What is it?
 1. `test_data_structure.py`: creates a test and a module fixture, and
     defines three tests, one of which is intended to fail.
+1. `test_list.py`: creates a list and tests whether `pop` and `append` work,
+   illustrates the advantage of `function` scope fixtures.
 1. `test_wc.py`: creates a module fixture that will be torn down when
     the test is done.
 

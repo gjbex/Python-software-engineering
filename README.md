@@ -20,3 +20,10 @@ For information on the training, see the website
 1. [Contributing](CONTRIBUTING.md): information on how to contribute to this
    repository.
 1. docs: directory containing the website for this repository.
+
+## Contributors
+
+* Geert Jan Bex ([geertjan.bex@uhasselt.be](mailto:geertjan.bex@uhasselt.be)),
+  Hasselt University/University of Leuven
+* Mustafa Dikmen, University of Leuven
+  * correcting typos and pointing out various mistakes

@@ -33,8 +33,5 @@ if __name__ == '__main__':
                             help='number of sounds to make')
     options = arg_parser.parse_args()
     sound_maker: SoundMaker
-    if options.type == 'duck':
-        sound_maker = Duck()
-    else:
-        sound_maker = AlarmClock()
+    sound_maker = Duck() if options.type == 'duck' else AlarmClock()
     sound_repeater(sound_maker, options.n)

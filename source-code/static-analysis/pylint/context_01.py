@@ -37,10 +37,9 @@ def main():
         print(f'in context {c2._context_nr}')
     with label('foo') as foo, label('bar') as bar:
         print(foo, bar)
-    with ContextTest(1) as c1, ContextTest(2) as c2:
+    with (ContextTest(1) as c1, ContextTest(2) as c2):
         print(f'in context {c1._context_nr}')
         raise Exception()
-        print(f'in context {c2._context_nr}')
     return 0
 
 if __name__ == '__main__':

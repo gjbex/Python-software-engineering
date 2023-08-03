@@ -7,10 +7,7 @@ FILE_ERROR = 2
 DATA_ERROR = 3
 
 def sum_numbers(file):
-    total = 0
-    for line in file:
-        total += float(line)
-    return total
+    return sum(float(line) for line in file)
 
 
 if __name__ == '__main__':

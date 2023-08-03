@@ -6,7 +6,7 @@ import sys
 class TypedProperty():
 
     def __init__(self, name, type, default=None):
-        self._name = '-' + name
+        self._name = f'-{name}'
         self._type = type
         self._default = default if default else type()
 

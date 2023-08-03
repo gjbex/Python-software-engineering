@@ -16,40 +16,26 @@ def memoize(f):
 
 @memoize
 def fib_memoized(n):
-    if n < 2:
-        return 1
-    else:
-        return fib_memoized(n - 1) + fib_memoized(n - 2)
+    return 1 if n < 2 else fib_memoized(n - 1) + fib_memoized(n - 2)
 
 
 @lru_cache(100)
 def fib_lru_cache(n):
-    if n < 2:
-        return 1
-    else:
-        return fib_lru_cache(n - 1) + fib_lru_cache(n - 2)
+    return 1 if n < 2 else fib_lru_cache(n - 1) + fib_lru_cache(n - 2)
 
 
 @cache
 def fib_cache(n):
-    if n < 2:
-        return 1
-    else:
-        return fib_cache(n - 1) + fib_cache(n - 2)
+    return 1 if n < 2 else fib_cache(n - 1) + fib_cache(n - 2)
 
 
 def fib(n):
-    if n < 2:
-        return 1
-    else:
-        return fib(n - 1) + fib(n - 2)
+    return 1 if n < 2 else fib(n - 1) + fib(n - 2)
 
 
 def execute(func, n_max, verbose=False):
-    values = []
     start = datetime.now()
-    for n in range(n_max):
-        values.append(func(n))
+    values = [func(n) for n in range(n_max)]
     delta = datetime.now() - start
     if verbose:
         for n in range(n_max):

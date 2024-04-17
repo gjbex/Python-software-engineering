@@ -1,6 +1,6 @@
 name: python_software_engineering
 channels:
-  - defaults
+  - conda-forge
 dependencies:
   - pyparsing
   - jupyterlab
@@ -10,4 +10,9 @@ dependencies:
   - mypy
   - pylint
   - matplotlib
-prefix: /home/gjb/miniconda3/envs/python_software_engineering
+  - ca-certificates
+  - certifi
+  - openssl
+  - pytest-benchmark
+  - pytest-memray
+prefix: /home/gjb/mambaforge/envs/python_software_engineering

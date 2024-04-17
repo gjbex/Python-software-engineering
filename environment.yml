@@ -13,6 +13,8 @@ dependencies:
   - ca-certificates
   - certifi
   - openssl
+  - scipy
+  - hypothesis
   - pytest-benchmark
   - pytest-memray
 prefix: /home/gjb/mambaforge/envs/python_software_engineering

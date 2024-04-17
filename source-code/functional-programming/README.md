@@ -6,3 +6,7 @@ Some examples of a functional programming style in Python.
     programming style in Python with examples.
 1. `sieve_of_eratosthenes.ipynb`: a lazy implementation of the sieve of
    Eratosthenes using generators.
+1. `persistent_lists.ipynb`: example of an implementation of a persistent
+   list, i.e., a purely functional data structure.
+1. `persistent_binary_search_tree.ipynb`: example of an implementation of a
+   persistent binary search tree, i.e., a purely functional data structure.

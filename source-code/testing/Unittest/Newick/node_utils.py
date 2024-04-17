@@ -1,18 +1,17 @@
 #!/usr/bin/env python
 '''module containing various functions for working with trees and nodes'''
 
-from node_parser import NodeParser
 import unittest
+from node_parser import NodeParser
 
 
 def depth(node):
     '''compute the depth of the given tree'''
     if node is None:
         return 0
-    elif node.is_leaf():
+    if node.is_leaf():
         return 1
-    else:
-        return 1 + max(list(map(depth, node.children())))
+    return 1 + max(list(map(depth, node.children())))
 
 
 def depth_first_iterator(node):
@@ -130,6 +129,7 @@ class NrLeafsTest(unittest.TestCase):
         parser.parse('(c1 ((c2 ((c3 ((c4)))))))')
         tree = parser.node()
         self.assertEqual(nr_leaf_nodes(tree), 1)
+
 
 if __name__ == '__main__':
     unittest.main()

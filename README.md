@@ -19,6 +19,8 @@ For information on the training, see the website
 1. [License](LICENSE): license information for the material in this repository.
 1. [Contributing](CONTRIBUTING.md): information on how to contribute to this
    repository.
+1. [Code of conduct](CODE_OF_CONDUCT.md): when participating in this training
+   you accept to abide by the code of conduct.
 1. docs: directory containing the website for this repository.
 
 ## Contributors

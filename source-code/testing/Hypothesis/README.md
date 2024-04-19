@@ -10,6 +10,7 @@ uses fuzzing to find issues in your code.
    function.
 1. `test_factorial.py`: hypothesis tests of the factorial
    function
+1. `points.py`: example of finding a bug with fuzz testing.
 
 
 ## How to use it?

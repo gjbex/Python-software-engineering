@@ -25,3 +25,22 @@ def fac(n: int) -> int:
     for i in range(n, 1, -1):
         result *= i
     return result
+
+
+def fac_bad(n: int) -> int:
+    '''Return the factorial of n
+
+    Parameters
+    ----------
+    n : int
+        The number to compute the factorial of
+
+    Returns
+    -------
+    int
+        The factorial of n
+    '''
+    result = 1
+    for i in range(n, 1, -1):
+        result *= i
+    return result

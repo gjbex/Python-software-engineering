@@ -17,3 +17,4 @@ versatile, but more modern packages are available.
     `-O` optimizatino flag when running the code.
 1. `DocTest`: illustration of using doctest (part of the Python standard
    library.
+1. `Hypothesis`: illustration of using hypothesis for fuzz testing.

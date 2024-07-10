@@ -8,3 +8,5 @@ Illustrations of error handling.
    ways ot handle errors.
 1. `data.txt`: data file to use as input.
 1. `data_not_ok.txt`: incorrect data file to use as input.
+1. `warnings`: illustrations of using the `warmings` module
+   for error handling.

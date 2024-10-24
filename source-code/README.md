@@ -33,3 +33,5 @@ was used to develop it.
 1. `code-organization`: illustration of how to organize code in packages
    and modules.
 1. `error-handling`: simple illustration of error handling.
+1. `pyinstaller`: illustration of how to use `pyinstaller` to create
+   standalone executables.

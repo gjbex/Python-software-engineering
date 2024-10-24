@@ -16,9 +16,12 @@ interpreter or any modules.  It is very useful to minimize dependencies.
 1. `build_apps.sh`: Bash script that creates a virtual environment, installs
    the required packages, and creates a standalone application using
    PyInstaller.
+1. `CMakeLists.txt`: CMake file to build and install the applications.
 
 
 ## How to create the applications?
+
+## By  hand
 
 1. Create a virtual environment and install the required packages:
    ```bash
@@ -40,3 +43,11 @@ interpreter or any modules.  It is very useful to minimize dependencies.
              --collect-submodules funcs \
              src/prod_columns.py
    ```
+
+
+## Using CMake
+
+```bash
+$ cmake -B build -S .
+$ cmake --build build
+```

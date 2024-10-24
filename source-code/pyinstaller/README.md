@@ -13,6 +13,9 @@ interpreter or any modules.  It is very useful to minimize dependencies.
 1. `data.csv`: CSV file that is used by the Python script in `src`.
 1. `requirements.txt`: file listing the Python packages that are required by
    the Python script in `src`.
+1. `build_apps.sh`: Bash script that creates a virtual environment, installs
+   the required packages, and creates a standalone application using
+   PyInstaller.
 
 
 ## How to create the applications?
@@ -32,8 +35,8 @@ interpreter or any modules.  It is very useful to minimize dependencies.
              src/sum_columns.py
    (venv)$ pyinstaller \
              --onefile \
-             --add-data data.csv:data.csv \
+             --add-data data.csv:. \
              --hidden-import funcs \
              --collect-submodules funcs \
-             src/sum_columns.py
+             src/prod_columns.py
    ```

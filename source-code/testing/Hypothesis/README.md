@@ -6,7 +6,7 @@ uses fuzzing to find issues in your code.
 
 ## What is it?
 
-1. `factorial.py`: implementatino of the factorial
+1. `factorial.py`: implementation of the factorial
    function.
 1. `test_factorial.py`: hypothesis tests of the factorial
    function

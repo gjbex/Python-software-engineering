@@ -6,6 +6,7 @@ was used to develop it.
 
 ## What is it?
 
+1. `api-design`: illustrates how to design APIs in Python.
 1. `context-manager`: illustrates how to write your own context managers.
 1. `coroutines`: illustrates how to write coroutines in Python.
 1. `decorators`: illustrates how to write decorators in Python.
@@ -32,3 +33,5 @@ was used to develop it.
 1. `code-organization`: illustration of how to organize code in packages
    and modules.
 1. `error-handling`: simple illustration of error handling.
+1. `pyinstaller`: illustration of how to use `pyinstaller` to create
+   standalone executables.

@@ -35,3 +35,5 @@ was used to develop it.
 1. `error-handling`: simple illustration of error handling.
 1. `pyinstaller`: illustration of how to use `pyinstaller` to create
    standalone executables.
+1. `text-resources`: illustration on how to include text resources in
+   a package and conveniently access them.

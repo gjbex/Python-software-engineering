@@ -25,11 +25,11 @@ Type checking can be done using [mypy](http://mypy-lang.org/index.html).
 1. `people_incorrect.py`: code that defines a `People` class, stores some
     in a list with mistakes.
 1. `duck_typing.py`: example code illustrating duck typing.
-1. `duck_typing_wrong.py`: example code illustrating duck typing, but
+1. `duck_typing_incorrect.py`: example code illustrating duck typing, but
    with an error.
 1. `typed_duck_typing.py`: example code illustrating duck typing
    using type hints.
-1. `typed_duck_typing_wrong.py`: example code illustrating duck typing
+1. `typed_duck_typing_incorrect.py`: example code illustrating duck typing
    using type hints with an error.
 1. `typed_duck_typing_false_positive.py`: example code illustrating
    duck typing using type hints for which mypy 0.910 generates a

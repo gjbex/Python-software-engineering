@@ -10,7 +10,7 @@ class SoundMaker(Protocol):
 
 class Duck:
 
-    def make_sound(self) -> None:
+    def quack(self) -> None:
         print('quack')
 
 
@@ -32,5 +32,9 @@ if __name__ == '__main__':
     arg_parser.add_argument('--n', type=int, default=1,
                             help='number of sounds to make')
     options = arg_parser.parse_args()
-    sound_maker: SoundMaker = Duck() if options.type == 'duck' else AlarmClock()
+    sound_maker: SoundMaker
+    if options.type == 'duck':
+        sound_maker = Duck()
+    else:
+        sound_maker = AlarmClock()
     sound_repeater(sound_maker, options.n)

@@ -1,0 +1,11 @@
+# virtual environment to build applications
+build_venv/
+
+# build directory
+build/
+
+# distribution directory
+dist/
+
+# Python cache directories
+__pycache__/

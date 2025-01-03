@@ -20,7 +20,7 @@ class AlarmClock:
         print('ring-ring')
 
 
-def sound_repeater(sound_maker: SoundMaker, nr_repeats: int):
+def sound_repeater(sound_maker: SoundMaker, nr_repeats: int) -> None:
     for _ in range(nr_repeats):
         sound_maker.make_sound()
 

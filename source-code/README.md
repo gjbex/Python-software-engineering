@@ -37,3 +37,5 @@ was used to develop it.
    standalone executables.
 1. `text-resources`: illustration on how to include text resources in
    a package and conveniently access them.
+1. `pydantic.ipynb`: illustration of how to use the `pydantic` library
+   for data validation.

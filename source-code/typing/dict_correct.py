@@ -5,7 +5,7 @@ import sys
 
 
 def word_count(text: str) -> dict[str, int]:
-    counts: dict[str, int] = dict()
+    counts: dict[str, int] = {}
     words = re.split(r"\W+", text)
     for word in words:
         word = word.lower()

@@ -42,3 +42,4 @@ Type checking can be done using [mypy](http://mypy-lang.org/index.html).
 1. `classes.py`: illustration of using type hints with a user-defined class.
 1. `classes_incorrect.py`: illustration of using type hints with a user-defined
    class with errors.
+1. `tree.py`: illustration of using type hints on more sophisticated classes.

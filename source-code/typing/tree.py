@@ -4,17 +4,17 @@ import textwrap
 from typing import Any, Callable, Self
 
 
-type TransformFunc = Callable[[Node], None]
-type VisitFunc = Callable[[Node], Any]
+type TransformFunc[T] = Callable[[Node[T]], None]
+type VisitFunc[T] = Callable[[Node[T]], Any]
 type AggrFunc = Callable[[Any, Any, Any], Any]
 
 
-class Node:
+class Node[T]:
     _left: Self | None
     _right: Self | None
-    _data: int
+    _data: T
 
-    def __init__(self, data: int):
+    def __init__(self, data: T):
         self._left = None
         self._right = None
         self._data = data
@@ -36,11 +36,11 @@ class Node:
         self._right = right
 
     @property
-    def data(self) -> int:
+    def data(self) -> T:
         return self._data
 
     @data.setter
-    def data(self, data: int) -> None:
+    def data(self, data: T) -> None:
         self._data = data
 
     @property
@@ -64,7 +64,7 @@ class Node:
             count += 1 + self._right.nr_descendants
         return count
 
-    def transformn(self, func: TransformFunc) -> None:
+    def transformn(self, func: TransformFunc[T]) -> None:
         func(self)
         if self._left is not None:
             self._left.transformn(func)
@@ -77,10 +77,12 @@ class Node:
     def __repr__(self) -> str:
         return f"{self.data}"
 
-    def visit(self, visit_func: VisitFunc, aggr_func: AggrFunc) -> Any:
+    def visit(self, visit_func: VisitFunc[T], aggr_func: AggrFunc) -> Any:
         self_value = visit_func(self)
         left_value = (
-            self._left.visit(visit_func, aggr_func) if self._left is not None else None
+            self._left.visit(visit_func, aggr_func)
+            if self._left is not None
+            else None
         )
         right_value = (
             self._right.visit(visit_func, aggr_func)
@@ -90,7 +92,7 @@ class Node:
         return aggr_func(self_value, left_value, right_value)
 
 
-def str_visit(node: Node) -> str:
+def str_visit[T](node: Node[T]) -> str:
     return str(node.data)
 
 
@@ -104,34 +106,38 @@ def str_aggr(self_value: str, left_value: str, right_value: str) -> str:
     return aggr
 
 
-def double_value(node: Node) -> None:
+def double_value(node: Node[int]) -> None:
     node.data = 2 * node.data
 
 
-class Tree:
-    _root: Node | None
+class Tree[T]:
+    _root: Node[T] | None
 
-    def __init__(self, root: Node | None = None):
+    def __init__(self, root: Node[T] | None = None):
         self._root = root
 
     @property
-    def root(self) -> Node | None:
+    def root(self) -> Node[T] | None:
         return self._root
 
     @root.setter
-    def root(self, root: Node) -> None:
+    def root(self, root: Node[T]) -> None:
         self._root = root
 
     @property
     def nr_of_nodes(self) -> int:
         return 0 if self._root is None else 1 + self._root.nr_descendants
 
-    def transformn(self, func: TransformFunc) -> None:
+    def transformn(self, func: TransformFunc[T]) -> None:
         if self._root is not None:
             self._root.transformn(func)
 
     def __str__(self) -> str:
-        return "" if self._root is None else self._root.visit(str_visit, str_aggr)
+        return (
+            ""
+            if self._root is None
+            else self._root.visit(str_visit, str_aggr)
+        )
 
     def __repr__(self) -> str:
         return f"{self._root}"

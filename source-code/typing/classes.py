@@ -6,7 +6,7 @@ from typing import Any
 class MyClass:
 
     def __init__(self, data: Any) -> None:
-        self.data = data
+        self.data = int(data)
 
     @property
     def data(self) -> int:

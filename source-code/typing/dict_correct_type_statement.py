@@ -4,8 +4,11 @@ import re
 import sys
 
 
-def word_count(text: str) -> dict[str, int]:
-    counts: dict[str, int] = {}
+type Count = dict[str, int]
+
+
+def word_count(text: str) -> Count:
+    counts: Count = {}
     words = re.split(r"\W+", text)
     for word in words:
         word = word.lower()

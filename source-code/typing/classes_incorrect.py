@@ -1,20 +1,24 @@
 #!/usr/bin/env python
 
-from typing import Any
+from typing import TYPE_CHECKING
+
+
+if TYPE_CHECKING:
+    from _typeshed import ConvertibleToInt
 
 
 class MyClass:
 
-    def __init__(self, data: Any) -> None:
-        self.data = data
+    def __init__(self, data: 'ConvertibleToInt') -> None:
+        self._data = data
 
     @property
     def data(self) -> int:
-        return self.data
+        return self._data
 
     @data.setter
-    def data(self, value: Any) -> None:
-        self.data = int(value)
+    def data(self, value: 'ConvertibleToInt') -> None:
+        self._data = int(value)
 
     def __repr__(self) -> str:
         return f'data: {self.data}'
@@ -36,3 +40,4 @@ if __name__ == '__main__':
     print_all(datas)
     datas.append('354')
     print_all(datas)
+    data = MyClass((12,))

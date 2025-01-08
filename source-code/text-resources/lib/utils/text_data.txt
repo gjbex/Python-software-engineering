@@ -1,0 +1,4 @@
+This is a text
+with multiple lines
+to see how text resources
+work.

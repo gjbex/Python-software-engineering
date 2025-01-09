@@ -1,6 +1,6 @@
 # Typing
 
-Python 3.5 introducd optional type annotation for functions, and that
+Python 3.5 introduced optional type annotation for functions, and that
 functionality was extended in Python 3.6.
 
 The `mypy` static type checker can use this annotation to detect type errors.

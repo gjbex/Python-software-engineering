@@ -19,3 +19,8 @@ Run with pytest:
 ```bash
 $ pytest --hypothesis-show-statistics
 ```
+
+For the `points.py` example, run with:
+```bash
+$ pytest --hypothesis-show-statistics points.py
+```

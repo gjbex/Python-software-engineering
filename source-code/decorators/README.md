@@ -14,5 +14,9 @@ What is it?
     large.  The decorated function in this example is the factorial.
     Also it illustrates `functools` wrap decorator to retain the wrapped
     function's name, docstring, etc.
+1. `decorator_arguments.py`: an example of a decorator that takes arguments.
+   The `check_range` decorator takes a minimum and maximum value as arguments
+   and checks if the wrapped function's argument falls within that range,
+   throwing an exception if it does not.
 1. `memoize.py`: an example of adding a cache to a function using a simple
     custom decorator, as well as `functools`'s `lru_cache` decorator.

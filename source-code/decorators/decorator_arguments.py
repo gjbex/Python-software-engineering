@@ -50,4 +50,4 @@ if __name__ == '__main__':
     try:
         print(silly(2.5))
     except ValueError as e:
-        print(f'Excepton raised as expected: {e.message}')
+        print(f'Exception raised as expected: {e}')

@@ -10,39 +10,26 @@ Type checking can be done using [mypy](http://mypy-lang.org/index.html).
 
 ## What is it?
 
-1. `mypy.ini`: mypy configuration file.
-1. `correct.py`: code that has type annotations, and no type errors.
-1. `incorrect_01.py`: code that has type annotations, and passes a string to a
-   function that expects an `int`.
-1. `incorrect_02.py`: code that has type annotations, and the result of a
-   function that returns an `int` is assigned to a `str` variable.
-1. `incorrect_03.py`: code that has type annotations, and the result of a
-   function that returns an `int`, assigns it to a variable that is later used
-   as a `str`.
-1. `dict_correct.py`: code that counts the words in a text read from standard
-   input.
-1. `dict_incorrect.py`: code that counts the words in a text read from standard
-   input.  The counts are subsequently normalized to `float`, which is a type
-   error.
-1. `dict_correct_type_statement.py`: same code as `dict_correct.py`, but with a
-   type variable as type statement.
-1. `people_incorrect.py`: code that defines a `People` class, stores some in a
-   list with mistakes.
-1. `duck_typing.py`: example code illustrating duck typing.
-1. `duck_typing_incorrect.py`: example code illustrating duck typing, but with
-   an error.
-1. `typed_duck_typing.py`: example code illustrating duck typing using type
-   hints.
-1. `typed_duck_typing_clean.py`: example code illustrating duck typing using
-   type hints with a factory function.
-1. `typed_duck_typing_incorrect.py`: example code illustrating duck typing
-   using type hints with an error.
-1. `numpy_typing.py`: illustration of a script using both numpy and matplotlib
-   with type hints.
-1. `classes.py`: illustration of using type hints with a user-defined class.
-1. `classes_incorrect.py`: illustration of using type hints with a user-defined
-   class with errors.
-1. `tree.py`: illustration of using type hints on more sophisticated classes,
-   as well as generic types.
-1. `new_types.py`: illustration of using `NewType` to create specific types
-   with specific semantics. 
+1. `fibonacci_basics`: basic examples with a Fibonacci function and several
+   type errors that `mypy` can detect.
+1. `word_count`: dictionary-based word counting examples, including a sample
+   input text.
+1. `duck_typing_example`: examples illustrating plain duck typing and duck
+   typing with `Protocol`.
+1. `people_example`: example with a typed list of `Person` instances that
+   contains multiple errors.
+1. `class_typing`: examples illustrating type checking with a user-defined
+   class.
+1. `tree_typing`: example illustrating generic classes and recursive types.
+1. `new_type_examples`: example illustrating the use of `NewType`.
+1. `numpy_typing_example`: example illustrating typing for NumPy arrays and a
+   small plotting workflow.
+
+Each subdirectory contains the code for one example family together with a
+local `mypy.ini` configuration file and a local `README.md`.  Run `mypy` from
+within a subdirectory, for example:
+
+```bash
+cd fibonacci_basics
+mypy *.py
+```

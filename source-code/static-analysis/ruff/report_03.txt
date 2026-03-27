@@ -1,0 +1,76 @@
+D100 Missing docstring in public module
+--> ruff/context_03.py:1:1
+
+D101 Missing docstring in public class
+  --> ruff/context_03.py:9:7
+   |
+ 9 | class ContextTest:
+   |       ^^^^^^^^^^^
+10 |
+11 |     def __init__(self, context_nr: int) -> None:
+   |
+
+D107 Missing docstring in `__init__`
+  --> ruff/context_03.py:11:9
+   |
+ 9 | class ContextTest:
+10 |
+11 |     def __init__(self, context_nr: int) -> None:
+   |         ^^^^^^^^
+12 |         self._context_nr = context_nr
+13 |         print(f'created with {self._context_nr}')
+   |
+
+D105 Missing docstring in magic method
+  --> ruff/context_03.py:15:9
+   |
+13 |         print(f'created with {self._context_nr}')
+14 |
+15 |     def __enter__(self) -> 'ContextTest':
+   |         ^^^^^^^^^
+16 |         print(f'entering {self._context_nr}')
+17 |         return self
+   |
+
+D105 Missing docstring in magic method
+  --> ruff/context_03.py:19:9
+   |
+17 |         return self
+18 |
+19 |     def __exit__(
+   |         ^^^^^^^^
+20 |         self,
+21 |         exception_type: type[BaseException] | None,
+   |
+
+D103 Missing docstring in public function
+  --> ruff/context_03.py:34:5
+   |
+33 | @contextmanager
+34 | def label(name: str) -> Iterator[str]:
+   |     ^^^^^
+35 |     print(f'entering label({name})')
+36 |     yield name
+   |
+
+D103 Missing docstring in public function
+  --> ruff/context_03.py:40:5
+   |
+40 | def main() -> int:
+   |     ^^^^
+41 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+42 |         print(f'in context {c1._context_nr}')
+   |
+
+TRY002 Create your own exception
+  --> ruff/context_03.py:48:15
+   |
+46 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+47 |         print(f'in context {c1._context_nr}')
+48 |         raise Exception()
+   |               ^^^^^^^^^^^
+49 |         print(f'in context {c2._context_nr}')
+50 |     return 0
+   |
+
+Found 8 errors.

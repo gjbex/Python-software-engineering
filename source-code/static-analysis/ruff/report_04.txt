@@ -1,0 +1,12 @@
+TRY002 Create your own exception
+  --> ruff/context_04.py:61:15
+   |
+59 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+60 |         print(f'in context {c1._context_nr}')
+61 |         raise Exception()
+   |               ^^^^^^^^^^^
+62 |         print(f'in context {c2._context_nr}')
+63 |     return 0
+   |
+
+Found 1 error.

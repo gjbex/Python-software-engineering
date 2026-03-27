@@ -1,0 +1,468 @@
+D100 Missing docstring in public module
+--> ruff/context_00.py:1:1
+
+I001 [*] Import block is un-sorted or un-formatted
+ --> ruff/context_00.py:3:1
+  |
+1 |   #!/usr/bin/env python
+2 |
+3 | / from contextlib import contextmanager
+4 | | import sys
+  | |__________^
+  |
+help: Organize imports
+
+D101 Missing docstring in public class
+ --> ruff/context_00.py:7:7
+  |
+7 | class ContextTest(object):
+  |       ^^^^^^^^^^^
+8 |
+9 |     def __init__(self, context_nr):
+  |
+
+UP004 [*] Class `ContextTest` inherits from `object`
+ --> ruff/context_00.py:7:19
+  |
+7 | class ContextTest(object):
+  |                   ^^^^^^
+8 |
+9 |     def __init__(self, context_nr):
+  |
+help: Remove `object` inheritance
+
+ANN204 Missing return type annotation for special method `__init__`
+  --> ruff/context_00.py:9:9
+   |
+ 7 | class ContextTest(object):
+ 8 |
+ 9 |     def __init__(self, context_nr):
+   |         ^^^^^^^^
+10 |         self._context_nr = context_nr
+11 |         print('created with {0}'.format(self._context_nr))
+   |
+help: Add return type annotation: `None`
+
+D107 Missing docstring in `__init__`
+  --> ruff/context_00.py:9:9
+   |
+ 7 | class ContextTest(object):
+ 8 |
+ 9 |     def __init__(self, context_nr):
+   |         ^^^^^^^^
+10 |         self._context_nr = context_nr
+11 |         print('created with {0}'.format(self._context_nr))
+   |
+
+ANN001 Missing type annotation for function argument `context_nr`
+  --> ruff/context_00.py:9:24
+   |
+ 7 | class ContextTest(object):
+ 8 |
+ 9 |     def __init__(self, context_nr):
+   |                        ^^^^^^^^^^
+10 |         self._context_nr = context_nr
+11 |         print('created with {0}'.format(self._context_nr))
+   |
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:11:15
+   |
+ 9 |     def __init__(self, context_nr):
+10 |         self._context_nr = context_nr
+11 |         print('created with {0}'.format(self._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+12 |
+13 |     def __enter__(self):
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:11:15
+   |
+ 9 |     def __init__(self, context_nr):
+10 |         self._context_nr = context_nr
+11 |         print('created with {0}'.format(self._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+12 |
+13 |     def __enter__(self):
+   |
+help: Convert to f-string
+
+ANN204 Missing return type annotation for special method `__enter__`
+  --> ruff/context_00.py:13:9
+   |
+11 |         print('created with {0}'.format(self._context_nr))
+12 |
+13 |     def __enter__(self):
+   |         ^^^^^^^^^
+14 |         print('entering {0}'.format(self._context_nr))
+15 |         return self
+   |
+help: Add return type annotation
+
+D105 Missing docstring in magic method
+  --> ruff/context_00.py:13:9
+   |
+11 |         print('created with {0}'.format(self._context_nr))
+12 |
+13 |     def __enter__(self):
+   |         ^^^^^^^^^
+14 |         print('entering {0}'.format(self._context_nr))
+15 |         return self
+   |
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:14:15
+   |
+13 |     def __enter__(self):
+14 |         print('entering {0}'.format(self._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+15 |         return self
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:14:15
+   |
+13 |     def __enter__(self):
+14 |         print('entering {0}'.format(self._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+15 |         return self
+   |
+help: Convert to f-string
+
+ANN204 Missing return type annotation for special method `__exit__`
+  --> ruff/context_00.py:17:9
+   |
+15 |         return self
+16 |
+17 |     def __exit__(self, exception_type, exception_value, backtrace):
+   |         ^^^^^^^^
+18 |         print('exiting {0}'.format(self._context_nr))
+19 |         if exception_type:
+   |
+help: Add return type annotation
+
+D105 Missing docstring in magic method
+  --> ruff/context_00.py:17:9
+   |
+15 |         return self
+16 |
+17 |     def __exit__(self, exception_type, exception_value, backtrace):
+   |         ^^^^^^^^
+18 |         print('exiting {0}'.format(self._context_nr))
+19 |         if exception_type:
+   |
+
+ANN001 Missing type annotation for function argument `exception_type`
+  --> ruff/context_00.py:17:24
+   |
+15 |         return self
+16 |
+17 |     def __exit__(self, exception_type, exception_value, backtrace):
+   |                        ^^^^^^^^^^^^^^
+18 |         print('exiting {0}'.format(self._context_nr))
+19 |         if exception_type:
+   |
+
+ANN001 Missing type annotation for function argument `exception_value`
+  --> ruff/context_00.py:17:40
+   |
+15 |         return self
+16 |
+17 |     def __exit__(self, exception_type, exception_value, backtrace):
+   |                                        ^^^^^^^^^^^^^^^
+18 |         print('exiting {0}'.format(self._context_nr))
+19 |         if exception_type:
+   |
+
+ANN001 Missing type annotation for function argument `backtrace`
+  --> ruff/context_00.py:17:57
+   |
+15 |         return self
+16 |
+17 |     def __exit__(self, exception_type, exception_value, backtrace):
+   |                                                         ^^^^^^^^^
+18 |         print('exiting {0}'.format(self._context_nr))
+19 |         if exception_type:
+   |
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:18:15
+   |
+17 |     def __exit__(self, exception_type, exception_value, backtrace):
+18 |         print('exiting {0}'.format(self._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+19 |         if exception_type:
+20 |             print('exception in context {0}:'.format(self._context_nr))
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:18:15
+   |
+17 |     def __exit__(self, exception_type, exception_value, backtrace):
+18 |         print('exiting {0}'.format(self._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+19 |         if exception_type:
+20 |             print('exception in context {0}:'.format(self._context_nr))
+   |
+help: Convert to f-string
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:20:19
+   |
+18 |         print('exiting {0}'.format(self._context_nr))
+19 |         if exception_type:
+20 |             print('exception in context {0}:'.format(self._context_nr))
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+21 |             print('\t', exception_type, exception_value, backtrace)
+22 |             return
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:20:19
+   |
+18 |         print('exiting {0}'.format(self._context_nr))
+19 |         if exception_type:
+20 |             print('exception in context {0}:'.format(self._context_nr))
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+21 |             print('\t', exception_type, exception_value, backtrace)
+22 |             return
+   |
+help: Convert to f-string
+
+RET505 [*] Unnecessary `else` after `return` statement
+  --> ruff/context_00.py:23:9
+   |
+21 |             print('\t', exception_type, exception_value, backtrace)
+22 |             return
+23 |         else:
+   |         ^^^^
+24 |             print('no exception in context {0}'.format(self._context_nr))
+   |
+help: Remove unnecessary `else`
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:24:19
+   |
+22 |             return
+23 |         else:
+24 |             print('no exception in context {0}'.format(self._context_nr))
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:24:19
+   |
+22 |             return
+23 |         else:
+24 |             print('no exception in context {0}'.format(self._context_nr))
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: Convert to f-string
+
+ANN201 Missing return type annotation for public function `label`
+  --> ruff/context_00.py:28:5
+   |
+27 | @contextmanager
+28 | def label(name):
+   |     ^^^^^
+29 |     print('entering label({0})'.format(name))
+30 |     yield name
+   |
+help: Add return type annotation
+
+D103 Missing docstring in public function
+  --> ruff/context_00.py:28:5
+   |
+27 | @contextmanager
+28 | def label(name):
+   |     ^^^^^
+29 |     print('entering label({0})'.format(name))
+30 |     yield name
+   |
+
+ANN001 Missing type annotation for function argument `name`
+  --> ruff/context_00.py:28:11
+   |
+27 | @contextmanager
+28 | def label(name):
+   |           ^^^^
+29 |     print('entering label({0})'.format(name))
+30 |     yield name
+   |
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:29:11
+   |
+27 | @contextmanager
+28 | def label(name):
+29 |     print('entering label({0})'.format(name))
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+30 |     yield name
+31 |     print('exiting label({0})'. format(name))
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:29:11
+   |
+27 | @contextmanager
+28 | def label(name):
+29 |     print('entering label({0})'.format(name))
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+30 |     yield name
+31 |     print('exiting label({0})'. format(name))
+   |
+help: Convert to f-string
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:31:11
+   |
+29 |     print('entering label({0})'.format(name))
+30 |     yield name
+31 |     print('exiting label({0})'. format(name))
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:31:11
+   |
+29 |     print('entering label({0})'.format(name))
+30 |     yield name
+31 |     print('exiting label({0})'. format(name))
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: Convert to f-string
+
+ANN201 Missing return type annotation for public function `main`
+  --> ruff/context_00.py:34:5
+   |
+34 | def main():
+   |     ^^^^
+35 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+36 |         print('in context {0}'.format(c1._context_nr))
+   |
+help: Add return type annotation: `int`
+
+D103 Missing docstring in public function
+  --> ruff/context_00.py:34:5
+   |
+34 | def main():
+   |     ^^^^
+35 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+36 |         print('in context {0}'.format(c1._context_nr))
+   |
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:36:15
+   |
+34 | def main():
+35 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+36 |         print('in context {0}'.format(c1._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+37 |         print('in context {0}'.format(c2._context_nr))
+38 |     with label('foo') as foo, label('bar') as bar:
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:36:15
+   |
+34 | def main():
+35 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+36 |         print('in context {0}'.format(c1._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+37 |         print('in context {0}'.format(c2._context_nr))
+38 |     with label('foo') as foo, label('bar') as bar:
+   |
+help: Convert to f-string
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:37:15
+   |
+35 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+36 |         print('in context {0}'.format(c1._context_nr))
+37 |         print('in context {0}'.format(c2._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+38 |     with label('foo') as foo, label('bar') as bar:
+39 |         print(foo, bar)
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:37:15
+   |
+35 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+36 |         print('in context {0}'.format(c1._context_nr))
+37 |         print('in context {0}'.format(c2._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+38 |     with label('foo') as foo, label('bar') as bar:
+39 |         print(foo, bar)
+   |
+help: Convert to f-string
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:41:15
+   |
+39 |         print(foo, bar)
+40 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+41 |         print('in context {0}'.format(c1._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+42 |         raise Exception()
+43 |         print('in context {0}'.format(c2._context_nr))
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:41:15
+   |
+39 |         print(foo, bar)
+40 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+41 |         print('in context {0}'.format(c1._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+42 |         raise Exception()
+43 |         print('in context {0}'.format(c2._context_nr))
+   |
+help: Convert to f-string
+
+TRY002 Create your own exception
+  --> ruff/context_00.py:42:15
+   |
+40 |     with ContextTest(1) as c1, ContextTest(2) as c2:
+41 |         print('in context {0}'.format(c1._context_nr))
+42 |         raise Exception()
+   |               ^^^^^^^^^^^
+43 |         print('in context {0}'.format(c2._context_nr))
+44 |     return 0
+   |
+
+UP030 Use implicit references for positional format fields
+  --> ruff/context_00.py:43:15
+   |
+41 |         print('in context {0}'.format(c1._context_nr))
+42 |         raise Exception()
+43 |         print('in context {0}'.format(c2._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+44 |     return 0
+   |
+help: Remove explicit positional indices
+
+UP032 [*] Use f-string instead of `format` call
+  --> ruff/context_00.py:43:15
+   |
+41 |         print('in context {0}'.format(c1._context_nr))
+42 |         raise Exception()
+43 |         print('in context {0}'.format(c2._context_nr))
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+44 |     return 0
+   |
+help: Convert to f-string
+
+Found 43 errors.
+[*] 14 fixable with the `--fix` option (13 hidden fixes can be enabled with the `--unsafe-fixes` option).

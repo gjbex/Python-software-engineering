@@ -1,0 +1,41 @@
+target-version = 'py312'
+line-length = 79
+src = ['.']
+
+[lint]
+select = [
+    'ANN',
+    'B',
+    'C4',
+    'D',
+    'E',
+    'F',
+    'I',
+    'N',
+    'PIE',
+    'PTH',
+    'RET',
+    'SIM',
+    'UP',
+    'W',
+]
+ignore = [
+    'D203',
+    'D213',
+    'D300',
+]
+
+[lint.per-file-ignores]
+'tests/**/*.py' = [
+    'ANN',
+    'D',
+]
+'**/__init__.py' = [
+    'F401',
+]
+
+[lint.pydocstyle]
+convention = 'numpy'
+
+[format]
+quote-style = 'single'

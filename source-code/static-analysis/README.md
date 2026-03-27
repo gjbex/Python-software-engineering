@@ -8,3 +8,5 @@ as well as ensuring PEP 8 compliance.
 
 * `pylint`: illustration of steps to improve some old code and
   make it PEP 8 compliant.
+* `ruff`: illustration of steps to improve the same code based on
+  feedback from `ruff`.

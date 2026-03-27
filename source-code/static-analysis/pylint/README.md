@@ -17,6 +17,9 @@ on a scale from 0 to 10.
 * `context_04.py`/`report_04.txt`: fix variable names.
 * `context_05.py`/`report_05.txt`: remove unreachalbe statement.
 * `context_06.py`/`report_06.txt`: add docstrings.
+* `context_07.py`/`report_07.txt`: replace the broad exception with a
+  specific exception so the script gets 10/10 again with modern
+  `pylint`.
 
 ## Note
 

@@ -5,7 +5,7 @@ context_04.py:12:4: C0116: Missing function or method docstring (missing-functio
 context_04.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
 context_04.py:43:0: C0116: Missing function or method docstring (missing-function-docstring)
 context_04.py:52:8: W0101: Unreachable code (unreachable)
+context_04.py:51:8: W0719: Raising too general exception: Exception (broad-exception-raised)
 
-------------------------------------------------------------------
-Your code has been rated at 8.46/10
-
+-----------------------------------
+Your code has been rated at 8.21/10

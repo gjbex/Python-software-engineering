@@ -4,7 +4,7 @@ context_05.py:7:0: C0115: Missing class docstring (missing-class-docstring)
 context_05.py:12:4: C0116: Missing function or method docstring (missing-function-docstring)
 context_05.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
 context_05.py:43:0: C0116: Missing function or method docstring (missing-function-docstring)
+context_05.py:51:8: W0719: Raising too general exception: Exception (broad-exception-raised)
 
 -----------------------------------
-Your code has been rated at 8.68/10
-
+Your code has been rated at 8.42/10

@@ -1,4 +1,5 @@
+************* Module context_06
+context_06.py:67:8: W0719: Raising too general exception: Exception (broad-exception-raised)
 
-------------------------------------
-Your code has been rated at 10.00/10
-
+-----------------------------------
+Your code has been rated at 9.74/10

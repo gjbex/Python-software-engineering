@@ -1,0 +1,166 @@
+schema_version = 2
+id = "python-software-engineering"
+title = "Python software engineering"
+content_language = "en"
+summary = """
+Quality of software matters, whether you share it with others or not. Software should be easy to install, easy to use, and well documented. This training will cover those aspects from the perspective of the Python ecosystem. However, it is also important that software is easy to maintain, so coding style matters, API-level documentation should be available, as well as a battery of tests to ensure the software's integrity. Of course, good design is at least as important.
+"""
+languages = ["Python"]
+
+[[learning_outcomes]]
+statement = "Know some best practices for writing quality code."
+competencies = ["python.apply-best-practices", "software-engineering.assess-code-quality"]
+
+[[learning_outcomes]]
+statement = "Catch errors at development time by using type annotations in your code."
+competencies = ["python.type-annotations"]
+
+[[learning_outcomes]]
+statement = "Know how to handle errors."
+competencies = ["python.exceptions"]
+
+[[learning_outcomes]]
+statement = "Know how to systematically test your code."
+competencies = ["testing.write-unit-tests"]
+
+[[learning_outcomes]]
+statement = "Know how to document your code."
+competencies = ["software-engineering.document-code-and-interfaces"]
+
+[[learning_outcomes]]
+statement = "Be able to use objected-oriented programming to improve the reuse of your code."
+competencies = ["python.object-oriented-design"]
+
+[[learning_outcomes]]
+statement = "Be able to use functional programming concepts to improve your coding style."
+competencies = ["python.functional-programming"]
+
+[[learning_outcomes]]
+statement = "Aware that you can use design patterns to avoid reinventing the wheel."
+competencies = ["software-engineering.apply-design-patterns"]
+
+[source]
+metadata_document = "docs/README.md"
+repository_url = "https://github.com/gjbex/Python-software-engineering/"
+website_url = "https://gjbex.github.io/Python-software-engineering/"
+license = "CC-BY-4.0"
+
+[delivery]
+duration_minutes = 240
+duration_kind = "fixed"
+session_count = 1
+target_session_duration_minutes = 240
+schedule_complete = true
+description = """
+Total duration: 4 hours.
+"""
+
+[audience]
+description = """
+This training is for you if you want robust software that is easy to understand and maintain.
+"""
+
+[prerequisites]
+summary = """
+You will need experience programming in Python. This is not a training that starts from scratch. If you plan to do Python programming in a Linux or HPC environment you should be familiar with these as well. More concretely, participants should already be comfortable with the following: * running Python code in Jupyter or from the command line; * variables, numbers, strings, booleans, and basic containers such as lists, tuples, sets, and dictionaries; * `if`/`else` statements, `for` loops, and simple comprehensions; * writing and calling functions with arguments and return values; * importing modules and using functions, classes, and constants from them; * reading and writing small text files using `open(...)`; * basic exception handling with `try`/`except`; * defining and using simple classes with methods and instance attributes; * reading short Python scripts without needing every line explained. You do not need prior experience with type hints, `mypy`, `pytest`, `unittest`, decorators, context managers, descriptors, coroutines, metaclasses, `pydantic`, or design patterns. Those are part of the training itself.
+"""
+competencies = ["python.run-code", "python.values-and-containers", "python.control-flow-and-comprehensions", "python.functions", "python.import-modules", "python.file-io", "python.exceptions", "python.simple-classes"]
+
+[self_assessment]
+introduction = """
+If you can do most of the tasks below without looking up basic Python syntax, you are likely ready for this training.
+"""
+tasks = [
+  "Write a function that reads numbers from a file and returns their sum.",
+  "Use `try`/`except` to handle a missing input file or invalid value.",
+  "Define a simple class such as `Book` or `Person` with an `__init__` method and one extra method.",
+  "Import a module such as `pathlib`, `itertools`, or `collections` and use one of its basic features.",
+  "Read a short script that contains several functions and understand how data flows between them.",
+  "Explain what a list comprehension does and rewrite it as a regular loop.",
+  "Make a small change to an existing script, run it again, and interpret the result.",
+  "Read a short traceback and identify roughly where an error occurred."
+]
+
+[requirements]
+software = [
+  "Laptop or desktop with internet access.",
+  "A Python environment that can run Jupyter Lab if you want to use your own system.",
+  "Access to Google Colaboratory if you prefer not to install software."
+]
+
+[level]
+introductory_percent = 20
+intermediate_percent = 40
+advanced_percent = 40
+description = """
+For participants who already have basic Python programming experience, the material in this training is approximately These percentages describe the level of the software engineering and Python language concepts covered in the training, not the required entry level in Python itself.
+"""
+
+[[materials]]
+kind = "slides"
+path = "python_software_engineering.pptx"
+
+[[materials]]
+kind = "source-code"
+path = "source-code"
+
+[[materials]]
+kind = "environment"
+path = "environment.yml"
+
+[[trainers]]
+name = "Geert Jan Bex"
+email = "geertjan.bex@uhasselt.be"
+
+[[maintainers]]
+name = "Geert Jan Bex"
+email = "geertjan.bex@uhasselt.be"
+
+[[sessions]]
+id = "session-1"
+title = "Session one"
+duration_minutes = 240
+
+[[sessions.items]]
+subject = "introduction and motivation"
+duration_minutes = 5
+
+[[sessions.items]]
+subject = "coding best practices"
+duration_minutes = 15
+
+[[sessions.items]]
+subject = "exception handling"
+duration_minutes = 10
+
+[[sessions.items]]
+subject = "type hints"
+duration_minutes = 10
+
+[[sessions.items]]
+subject = "documenting code"
+duration_minutes = 10
+
+[[sessions.items]]
+subject = "unit testing"
+duration_minutes = 50
+
+[[sessions.items]]
+subject = "coffee break"
+duration_minutes = 10
+
+[[sessions.items]]
+subject = "object-oriented programming"
+duration_minutes = 80
+
+[[sessions.items]]
+subject = "functional programming"
+duration_minutes = 20
+
+[[sessions.items]]
+subject = "design patterns discussion"
+duration_minutes = 20
+
+[[sessions.items]]
+subject = "wrap up"
+duration_minutes = 10
